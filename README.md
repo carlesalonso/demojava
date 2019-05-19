@@ -17,19 +17,53 @@ Descripció del Dockerfile
 
 
 > FROM: Usem com imatge base la darrera de openjdk.
+
 > COPY copiem dins el contenidor a la carpeta on toca tota la carpeta de treball.
+
 > WORKDIR establim com directori de treball per la resta de comandes la carpeta /usr/src/myapp.
+
 > RUN aquí compilem el nostre arxiu java
+
 > ENTRYPOINT serveix per executar java i li passem com argument programa compilat
+
 > CMD establim un argument per defecte, per si no li passem cap
 
 Per provar-ho:
 
-> docker build -t demo-java .
-> docker run --rm demo-java
+```
+docker build -t demo-java .
+docker run --rm demo-java
+```
 
 Amb això obtenim el següent resultat:
 
+> \*
+
+> \* \*
+
+> \* \* \*
+
+> \* \* \* \*
+
+> \* \* \* \* \*
+
 També li podem passar un argument específic:
 
-> docker run --rm demo-java 8
+```
+docker run --rm demo-java 8
+```
+
+> \*
+
+> \* \*
+
+> \* \* \*
+
+> \* \* \* \*
+
+> \* \* \* \* \*
+
+> \* \* \* \* \* \*
+
+> \* \* \* \* \* \* \*
+> \* \* \* \* \* \* \* \*
