@@ -4,6 +4,43 @@ Exemple de com dockeritzar una aplicació senzilla de Java per consola
 
 El programa Java és el clàssic que se li passa un enter com argument i pinta un triangle amb * amb el número de files corresponent a l'argument.
 
+```java
+import java.io.*;
+public class Main 
+{
+    
+    // Function to demonstrate printing pattern 
+    public static void printStars(int n) 
+    { 
+        int i, j; 
+  
+        // outer loop to handle number of rows 
+        //  n in this case 
+        for(i=0; i<n; i++) 
+        { 
+  
+            //  inner loop to handle number of columns 
+            //  values changing acc. to outer loop     
+            for(j=0; j<=i; j++) 
+            { 
+                // printing stars 
+                System.out.print("* "); 
+            } 
+  
+            // ending line after each row 
+            System.out.println(); 
+        } 
+   } 
+    
+    
+    public static void main(String[] args) 
+    {
+        int n = Integer.parseInt(args[0]);
+        printStars(n); 
+    }
+}
+```
+
 Descripció del Dockerfile
 
 ```
