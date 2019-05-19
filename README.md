@@ -30,21 +30,6 @@ Per provar-ho:
 
 Amb això obtenim el següent resultat:
 
-* 
-* * 
-* * * 
-* * * * 
-* * * * * 
-
 També li podem passar un argument específic:
 
 > docker run --rm demo-java 8
-
-* 
-* * 
-* * * 
-* * * * 
-* * * * * 
-* * * * * * 
-* * * * * * * 
-* * * * * * * * 
