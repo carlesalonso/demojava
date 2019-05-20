@@ -9,25 +9,24 @@ import java.io.*;
 public class Main 
 {
     
-    // Function to demonstrate printing pattern 
+    // Function to print n files of stars
     public static void printStars(int n) 
     { 
         int i, j; 
   
-        // outer loop to handle number of rows 
-        //  n in this case 
+        // loop to handle number of rows 
         for(i=0; i<n; i++) 
         { 
   
-            //  inner loop to handle number of columns 
-            //  values changing acc. to outer loop     
+            //  loop to handle number of columns 
+            //       
             for(j=0; j<=i; j++) 
             { 
                 // printing stars 
                 System.out.print("* "); 
             } 
   
-            // ending line after each row 
+            // end line
             System.out.println(); 
         } 
    } 
@@ -35,8 +34,15 @@ public class Main
     
     public static void main(String[] args) 
     {
-        int n = Integer.parseInt(args[0]);
-        printStars(n); 
+        try
+        {
+            int n = Integer.parseInt(args[0].trim());
+            printStars(n);
+        }
+        catch(NumberFormatException error)
+        {
+            System.out.println("Argument must be an integer");
+        }
     }
 }
 ```
