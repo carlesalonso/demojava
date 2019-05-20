@@ -1,4 +1,4 @@
-# Demo bàsica de Java
+# Contenidor aplicació consola Java
 
 Exemple de com dockeritzar una aplicació senzilla de Java per consola
 
