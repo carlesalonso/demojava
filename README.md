@@ -49,7 +49,7 @@ public class Main
 
 Descripció del Dockerfile
 
-```
+```Dockerfile
   FROM openjdk:latest
   COPY . /usr/src/myapp
   WORKDIR /usr/src/myapp
