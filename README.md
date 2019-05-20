@@ -8,30 +8,29 @@ El programa Java és el clàssic que se li passa un enter com argument i pinta u
 import java.io.*;
 public class Main 
 {
-    
+
     // Function to print n files of stars
     public static void printStars(int n) 
     { 
-        int i, j; 
+        int i, j;
   
         // loop to handle number of rows 
-        for(i=0; i<n; i++) 
-        { 
+        for(i=0; i<n; i++)
+        {
   
-            //  loop to handle number of columns 
-            //       
-            for(j=0; j<=i; j++) 
+            //  loop to handle number of columns
+            //
+            for(j=0; j<=i; j++)
             { 
                 // printing stars 
-                System.out.print("* "); 
+                System.out.print("* ");
             } 
   
             // end line
             System.out.println(); 
-        } 
-   } 
-    
-    
+        }
+   }
+ 
     public static void main(String[] args) 
     {
         try
@@ -58,7 +57,6 @@ Descripció del Dockerfile
   CMD ["5"]
 ```
 
-
 > FROM: Usem com imatge base la darrera de openjdk.
 >
 > COPY copiem dins el contenidor a la carpeta on toca tota la carpeta de treball.
@@ -73,7 +71,7 @@ Descripció del Dockerfile
 
 Per provar-ho:
 
-```
+```bash
 docker build -t demo-java .
 docker run --rm demo-java
 ```
