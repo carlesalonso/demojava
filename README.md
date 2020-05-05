@@ -67,7 +67,7 @@ Descripció del Dockerfile
 >
 > ENTRYPOINT serveix per executar java i li passem com argument programa compilat
 >
-> CMD establim un argument per defecte, per si no li passem cap
+> CMD establim un argument per defecte, per si no li passem cap, agafa el valor 5
 
 Per provar-ho:
 
