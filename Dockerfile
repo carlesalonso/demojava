@@ -9,4 +9,4 @@ WORKDIR /code
 COPY --from=BUILDER /usr/src/myapp/Main.class .
 VOLUME /code
 ENTRYPOINT [ "java","Main"]
-CMD ["5"]
+CMD ["10"]
