@@ -1,5 +1,5 @@
 # Contenidor aplicació consola Java
-
+# Autobuild
 Exemple de com dockeritzar una aplicació senzilla de Java per consola
 
 El programa Java és el clàssic que se li passa un enter com argument i pinta un triangle amb * amb el número de files corresponent a l'argument.
