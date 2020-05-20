@@ -16,7 +16,7 @@ public class Main {
             for(j=0; j<=i; j++) 
             { 
                 // printing stars 
-                System.out.print("* "); 
+                System.out.print("O"); 
             } 
   
             // ending line after each row 
